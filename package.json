@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "index": "node scripts/build-index.mjs",
+    "prebuild": "node scripts/build-index.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
