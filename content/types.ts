@@ -25,6 +25,10 @@ export type Book = {
   category: Category;
   /** One line for the shelf. */
   hook: string;
+  /** Pin an exact Open Library cover id, bypassing the title/author search. */
+  coverId?: number;
+  /** Pin a jacket by ISBN instead. Used when coverId is not set. */
+  coverIsbn?: string;
   /** Minutes to read this summary. */
   readingMinutes: number;
   /** The single idea, in two or three sentences. */

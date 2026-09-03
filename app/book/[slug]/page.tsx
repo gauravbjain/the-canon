@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { books, bySlug } from "@/content";
 import { Cover } from "@/components/Cover";
+import { resolveCover } from "@/lib/covers";
 
 export function generateStaticParams() {
   return books.map((b) => ({ slug: b.slug }));
@@ -31,11 +32,13 @@ export default async function BookPage({
   const book = bySlug(slug);
   if (!book) notFound();
 
+  const cover = await resolveCover(book);
+
   return (
     <main>
       <div className="wrap wrap-book">
         <div className="book-head">
-          <Cover book={book} large />
+          <Cover book={book} src={cover} large />
           <div>
             <p className="eyebrow">{book.category}</p>
             <h1>{book.title}</h1>

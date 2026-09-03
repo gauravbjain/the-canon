@@ -505,3 +505,95 @@ article.read > section:first-of-type h2 { margin-top: 0; }
   .hero { padding: 3rem 0 2.25rem; }
   .shelf { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.75rem 1.25rem; }
 }
+
+/* ---------- shelf controls ---------- */
+.controls {
+  margin: 2.75rem 0 .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+
+.search {
+  font-family: var(--sans);
+  font-size: .95rem;
+  padding: .7rem .9rem;
+  width: 100%;
+  max-width: 28rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--card);
+  color: var(--ink);
+}
+
+.search::placeholder { color: var(--ink-3); }
+
+.search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.chip {
+  font-family: var(--sans);
+  font-size: .74rem;
+  letter-spacing: .05em;
+  padding: .35rem .75rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s;
+}
+
+.chip:hover { border-color: var(--ink-3); color: var(--ink); }
+
+.chip.on {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.chip-era { letter-spacing: .03em; }
+
+.linkish {
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.empty {
+  color: var(--ink-3);
+  font-size: .98rem;
+  padding: 2.5rem 0 1rem;
+  max-width: 40ch;
+}
+
+/* a real jacket sits on top of the generated cover */
+.cover-jacket {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.cover-jacket[alt]:after {
+  /* if the image 404s, let the generated cover show through */
+  content: "";
+  display: none;
+}

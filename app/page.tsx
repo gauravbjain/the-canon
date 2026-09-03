@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { books } from "@/content";
-import { Cover } from "@/components/Cover";
+import { Shelf } from "@/components/Shelf";
+import { resolveCovers } from "@/lib/covers";
 
-export default function Home() {
-  const sorted = [...books].sort((a, b) => a.year - b.year);
+export default async function Home() {
+  const covers = await resolveCovers(books);
 
   return (
     <main>
@@ -21,29 +21,7 @@ export default function Home() {
       </section>
 
       <div className="wrap">
-        <div className="shelf-head">
-          <h2>On the shelf</h2>
-          <span className="count">
-            {books.length} of 100 · more added weekly
-          </span>
-        </div>
-
-        <ul className="shelf">
-          {sorted.map((book) => (
-            <li className="shelf-item" key={book.slug}>
-              <Link href={`/book/${book.slug}`}>
-                <Cover book={book} />
-                <div className="shelf-meta">
-                  <p className="t">{book.title}</p>
-                  <p className="a">
-                    {book.author} · {book.era}
-                  </p>
-                  <p className="h">{book.hook}</p>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <Shelf books={books} covers={covers} />
       </div>
     </main>
   );
