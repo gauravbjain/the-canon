@@ -114,7 +114,7 @@ export const thinkingFastAndSlow: Book = {
     },
   ],
   tensions: [
-    "The replication crisis hit this book hard. The priming research in Chapter 4 has largely failed to replicate; Kahneman wrote an open letter in 2017 accepting the criticism and later said readers should not believe that chapter. He handled it about as well as a scientist can, but the chapter is still in the book.",
+    "The replication crisis hit this book hard. The priming research in Chapter 4 has largely failed to replicate. In 2017 Kahneman publicly accepted the criticism, saying he had placed too much faith in underpowered studies. He handled it about as well as a scientist can, but the chapter is still in the book.",
     "Ego depletion — the claim that self-control draws on a limited glucose-linked resource — is now widely regarded as unsupported. It appears in the book as settled.",
     "Gerd Gigerenzer's long-running critique holds that heuristics are not defective shortcuts but efficient adaptations to real environments, and that many classic 'biases' shrink or vanish when questions are posed in natural frequencies rather than probabilities. The disagreement is unresolved and worth knowing about.",
     "The book is long, and the middle chapters read as a survey of experiments rather than an argument. Many readers get most of the value from Parts 1 and 4.",
@@ -180,8 +180,8 @@ export const thinkingFastAndSlow: Book = {
       url: "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/",
     },
     {
-      label: "Reconstruction of a Train Wreck — Schimmack et al. on the priming chapter",
-      url: "https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/",
+      label: "Kahneman accepts the priming criticism — Retraction Watch, 2017",
+      url: "https://retractionwatch.com/2017/02/20/placed-much-faith-underpowered-studies-nobel-prize-winner-admits-mistakes/",
     },
   ],
 };

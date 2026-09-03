@@ -95,7 +95,7 @@ export const meditations: Book = {
   ],
   tensions: [
     "It was never written for publication, so it does not argue for its premises. If you do not already grant the Stoic picture of a rational, ordered cosmos, the book gives you little reason to.",
-    "Marcus ruled an empire built on slavery and conquest, persecuted Christians, and named his son Commodus as successor. The gap between the interior decency of the notebook and the exterior facts of the reign is real and worth sitting with.",
+    "Marcus ruled an empire built on slavery and conquest, presided over a reign in which Christians were persecuted, and named his son Commodus as successor. The gap between the interior decency of the notebook and the exterior facts of the reign is real and worth sitting with.",
     "Critics from Nietzsche onward have read Stoic acceptance as a sophisticated way of talking yourself out of changing things you could change. The book has no good answer to that, because it never anticipated the objection.",
     "Modern popular Stoicism often takes the self-management and leaves the metaphysics and the obligations to others, which produces something closer to a productivity system than to what Marcus was doing.",
   ],
