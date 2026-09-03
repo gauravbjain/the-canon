@@ -4,7 +4,7 @@ Long-form summaries of the hundred nonfiction books that have mattered most —
 the core idea, how the argument runs, where it is contested, and what each one
 connects to.
 
-Live: _(add the Vercel URL once connected)_
+Live: https://the-canon-six.vercel.app
 
 ## Adding a book
 
