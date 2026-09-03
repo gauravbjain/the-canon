@@ -1,69 +1,50 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { books } from "@/content";
+import { Cover } from "@/components/Cover";
 
 export default function Home() {
+  const sorted = [...books].sort((a, b) => a.year - b.year);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
+    <main>
+      <section className="hero">
+        <div className="wrap">
+          <p className="eyebrow">The hundred that mattered</p>
+          <h1>Nonfiction, read properly and written down.</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+            One long summary per book: the idea it exists to make, how the
+            argument runs, where it has been challenged, and what it connects
+            to. Written to be read on its own — not to replace the book, but to
+            let you decide whether you need it.
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <div className="wrap">
+        <div className="shelf-head">
+          <h2>On the shelf</h2>
+          <span className="count">
+            {books.length} of 100 · more added weekly
+          </span>
         </div>
-      </main>
-    </div>
+
+        <ul className="shelf">
+          {sorted.map((book) => (
+            <li className="shelf-item" key={book.slug}>
+              <Link href={`/book/${book.slug}`}>
+                <Cover book={book} />
+                <div className="shelf-meta">
+                  <p className="t">{book.title}</p>
+                  <p className="a">
+                    {book.author} · {book.era}
+                  </p>
+                  <p className="h">{book.hook}</p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </main>
   );
 }
