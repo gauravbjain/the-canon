@@ -3,18 +3,23 @@ import { aBriefHistoryOfTime } from "./books/a-brief-history-of-time";
 import { aRoomOfOnesOwn } from "./books/a-room-of-ones-own";
 import { aTheoryOfJustice } from "./books/a-theory-of-justice";
 import { aVindicationOfTheRightsOfWoman } from "./books/a-vindication-of-the-rights-of-woman";
+import { anEnquiryConcerningHumanUnderstanding } from "./books/an-enquiry-concerning-human-understanding";
 import { analects } from "./books/analects";
 import { artOfWar } from "./books/art-of-war";
 import { bhagavadGita } from "./books/bhagavad-gita";
+import { blackBoy } from "./books/black-boy";
 import { capital } from "./books/capital";
 import { commonSense } from "./books/common-sense";
 import { communistManifesto } from "./books/communist-manifesto";
 import { confessionsAugustine } from "./books/confessions-augustine";
+import { critiqueOfPureReason } from "./books/critique-of-pure-reason";
 import { deathAndLifeGreatAmericanCities } from "./books/death-and-life-great-american-cities";
 import { democracyInAmerica } from "./books/democracy-in-america";
 import { disciplineAndPunish } from "./books/discipline-and-punish";
 import { discoursesEpictetus } from "./books/discourses-epictetus";
+import { dispatches } from "./books/dispatches";
 import { eichmannInJerusalem } from "./books/eichmann-in-jerusalem";
+import { eminentVictorians } from "./books/eminent-victorians";
 import { essaysMontaigne } from "./books/essays-montaigne";
 import { generalTheory } from "./books/general-theory";
 import { godelEscherBach } from "./books/godel-escher-bach";
@@ -23,6 +28,7 @@ import { highOutputManagement } from "./books/high-output-management";
 import { hiroshima } from "./books/hiroshima";
 import { historiesHerodotus } from "./books/histories-herodotus";
 import { homageToCatalonia } from "./books/homage-to-catalonia";
+import { howToWinFriendsAndInfluencePeople } from "./books/how-to-win-friends-and-influence-people";
 import { ifThisIsAMan } from "./books/if-this-is-a-man";
 import { inColdBlood } from "./books/in-cold-blood";
 import { interpretationOfDreams } from "./books/interpretation-of-dreams";
@@ -35,11 +41,14 @@ import { nicomacheanEthics } from "./books/nicomachean-ethics";
 import { notesOfANativeSon } from "./books/notes-of-a-native-son";
 import { onLiberty } from "./books/on-liberty";
 import { onTheGenealogyOfMorals } from "./books/on-the-genealogy-of-morals";
+import { onTheNatureOfThings } from "./books/on-the-nature-of-things";
 import { onTheOriginOfSpecies } from "./books/on-the-origin-of-species";
 import { orientalism } from "./books/orientalism";
 import { originsOfTotalitarianism } from "./books/origins-of-totalitarianism";
 import { peloponnesianWar } from "./books/peloponnesian-war";
 import { pensees } from "./books/pensees";
+import { pilgrimAtTinkerCreek } from "./books/pilgrim-at-tinker-creek";
+import { principia } from "./books/principia";
 import { protestantEthic } from "./books/protestant-ethic";
 import { reflectionsOnTheRevolutionInFrance } from "./books/reflections-on-the-revolution-in-france";
 import { republic } from "./books/republic";
@@ -49,18 +58,25 @@ import { silentSpring } from "./books/silent-spring";
 import { soulsOfBlackFolk } from "./books/souls-of-black-folk";
 import { structureOfScientificRevolutions } from "./books/structure-of-scientific-revolutions";
 import { taoTeChing } from "./books/tao-te-ching";
+import { theAffluentSociety } from "./books/the-affluent-society";
+import { theAutobiographyOfBenjaminFranklin } from "./books/the-autobiography-of-benjamin-franklin";
 import { theAutobiographyOfMalcolmX } from "./books/the-autobiography-of-malcolm-x";
 import { theBlackSwan } from "./books/the-black-swan";
 import { theDeclineAndFallOfTheRomanEmpire } from "./books/the-decline-and-fall-of-the-roman-empire";
 import { theDiaryOfAYoungGirl } from "./books/the-diary-of-a-young-girl";
 import { theDoubleHelix } from "./books/the-double-helix";
+import { theEconomicConsequencesOfThePeace } from "./books/the-economic-consequences-of-the-peace";
+import { theEducationOfHenryAdams } from "./books/the-education-of-henry-adams";
 import { theElementsOfStyle } from "./books/the-elements-of-style";
 import { theEmperorOfAllMaladies } from "./books/the-emperor-of-all-maladies";
 import { theFederalistPapers } from "./books/the-federalist-papers";
 import { theFeminineMystique } from "./books/the-feminine-mystique";
 import { theGulagArchipelago } from "./books/the-gulag-archipelago";
 import { theGunsOfAugust } from "./books/the-guns-of-august";
+import { theInnovatorsDilemma } from "./books/the-innovators-dilemma";
+import { theLifeOfSamuelJohnson } from "./books/the-life-of-samuel-johnson";
 import { theMakingOfTheAtomicBomb } from "./books/the-making-of-the-atomic-bomb";
+import { theMakingOfTheEnglishWorkingClass } from "./books/the-making-of-the-english-working-class";
 import { theManWhoMistookHisWifeForAHat } from "./books/the-man-who-mistook-his-wife-for-a-hat";
 import { theMismeasureOfMan } from "./books/the-mismeasure-of-man";
 import { theMythicalManMonth } from "./books/the-mythical-man-month";
@@ -68,6 +84,7 @@ import { thePowerBroker } from "./books/the-power-broker";
 import { thePrince } from "./books/the-prince";
 import { theRightStuff } from "./books/the-right-stuff";
 import { theRoadToSerfdom } from "./books/the-road-to-serfdom";
+import { theRoadToWiganPier } from "./books/the-road-to-wigan-pier";
 import { theSecondSex } from "./books/the-second-sex";
 import { theSelfishGene } from "./books/the-selfish-gene";
 import { theSixthExtinction } from "./books/the-sixth-extinction";
@@ -79,6 +96,9 @@ import { thinkingFastAndSlow } from "./books/thinking-fast-and-slow";
 import { thinkingInSystems } from "./books/thinking-in-systems";
 import { walden } from "./books/walden";
 import { wealthOfNations } from "./books/wealth-of-nations";
+import { whyWeCantWait } from "./books/why-we-cant-wait";
+import { working } from "./books/working";
+import { zenAndTheArtOfMotorcycleMaintenance } from "./books/zen-and-the-art-of-motorcycle-maintenance";
 
 /**
  * The shelf. Generated by scripts/build-index.mjs — add a file to
@@ -89,18 +109,23 @@ export const books: Book[] = [
   aRoomOfOnesOwn,
   aTheoryOfJustice,
   aVindicationOfTheRightsOfWoman,
+  anEnquiryConcerningHumanUnderstanding,
   analects,
   artOfWar,
   bhagavadGita,
+  blackBoy,
   capital,
   commonSense,
   communistManifesto,
   confessionsAugustine,
+  critiqueOfPureReason,
   deathAndLifeGreatAmericanCities,
   democracyInAmerica,
   disciplineAndPunish,
   discoursesEpictetus,
+  dispatches,
   eichmannInJerusalem,
+  eminentVictorians,
   essaysMontaigne,
   generalTheory,
   godelEscherBach,
@@ -109,6 +134,7 @@ export const books: Book[] = [
   hiroshima,
   historiesHerodotus,
   homageToCatalonia,
+  howToWinFriendsAndInfluencePeople,
   ifThisIsAMan,
   inColdBlood,
   interpretationOfDreams,
@@ -121,11 +147,14 @@ export const books: Book[] = [
   notesOfANativeSon,
   onLiberty,
   onTheGenealogyOfMorals,
+  onTheNatureOfThings,
   onTheOriginOfSpecies,
   orientalism,
   originsOfTotalitarianism,
   peloponnesianWar,
   pensees,
+  pilgrimAtTinkerCreek,
+  principia,
   protestantEthic,
   reflectionsOnTheRevolutionInFrance,
   republic,
@@ -135,18 +164,25 @@ export const books: Book[] = [
   soulsOfBlackFolk,
   structureOfScientificRevolutions,
   taoTeChing,
+  theAffluentSociety,
+  theAutobiographyOfBenjaminFranklin,
   theAutobiographyOfMalcolmX,
   theBlackSwan,
   theDeclineAndFallOfTheRomanEmpire,
   theDiaryOfAYoungGirl,
   theDoubleHelix,
+  theEconomicConsequencesOfThePeace,
+  theEducationOfHenryAdams,
   theElementsOfStyle,
   theEmperorOfAllMaladies,
   theFederalistPapers,
   theFeminineMystique,
   theGulagArchipelago,
   theGunsOfAugust,
+  theInnovatorsDilemma,
+  theLifeOfSamuelJohnson,
   theMakingOfTheAtomicBomb,
+  theMakingOfTheEnglishWorkingClass,
   theManWhoMistookHisWifeForAHat,
   theMismeasureOfMan,
   theMythicalManMonth,
@@ -154,6 +190,7 @@ export const books: Book[] = [
   thePrince,
   theRightStuff,
   theRoadToSerfdom,
+  theRoadToWiganPier,
   theSecondSex,
   theSelfishGene,
   theSixthExtinction,
@@ -165,6 +202,9 @@ export const books: Book[] = [
   thinkingInSystems,
   walden,
   wealthOfNations,
+  whyWeCantWait,
+  working,
+  zenAndTheArtOfMotorcycleMaintenance,
 ];
 
 export const bySlug = (slug: string): Book | undefined =>
