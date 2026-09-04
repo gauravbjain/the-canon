@@ -4,16 +4,19 @@ import { aTheoryOfJustice } from "./books/a-theory-of-justice";
 import { analects } from "./books/analects";
 import { artOfWar } from "./books/art-of-war";
 import { bhagavadGita } from "./books/bhagavad-gita";
+import { capital } from "./books/capital";
 import { communistManifesto } from "./books/communist-manifesto";
 import { confessionsAugustine } from "./books/confessions-augustine";
 import { deathAndLifeGreatAmericanCities } from "./books/death-and-life-great-american-cities";
 import { democracyInAmerica } from "./books/democracy-in-america";
 import { discoursesEpictetus } from "./books/discourses-epictetus";
+import { eichmannInJerusalem } from "./books/eichmann-in-jerusalem";
 import { essaysMontaigne } from "./books/essays-montaigne";
 import { generalTheory } from "./books/general-theory";
 import { godelEscherBach } from "./books/godel-escher-bach";
 import { gunsGermsAndSteel } from "./books/guns-germs-and-steel";
 import { highOutputManagement } from "./books/high-output-management";
+import { hiroshima } from "./books/hiroshima";
 import { historiesHerodotus } from "./books/histories-herodotus";
 import { ifThisIsAMan } from "./books/if-this-is-a-man";
 import { interpretationOfDreams } from "./books/interpretation-of-dreams";
@@ -24,6 +27,7 @@ import { meditations } from "./books/meditations";
 import { nicomacheanEthics } from "./books/nicomachean-ethics";
 import { notesOfANativeSon } from "./books/notes-of-a-native-son";
 import { onLiberty } from "./books/on-liberty";
+import { onTheGenealogyOfMorals } from "./books/on-the-genealogy-of-morals";
 import { onTheOriginOfSpecies } from "./books/on-the-origin-of-species";
 import { orientalism } from "./books/orientalism";
 import { originsOfTotalitarianism } from "./books/origins-of-totalitarianism";
@@ -35,11 +39,17 @@ import { silentSpring } from "./books/silent-spring";
 import { soulsOfBlackFolk } from "./books/souls-of-black-folk";
 import { structureOfScientificRevolutions } from "./books/structure-of-scientific-revolutions";
 import { taoTeChing } from "./books/tao-te-ching";
+import { theAutobiographyOfMalcolmX } from "./books/the-autobiography-of-malcolm-x";
+import { theBlackSwan } from "./books/the-black-swan";
 import { theDoubleHelix } from "./books/the-double-helix";
 import { theFeminineMystique } from "./books/the-feminine-mystique";
+import { theGulagArchipelago } from "./books/the-gulag-archipelago";
+import { theMakingOfTheAtomicBomb } from "./books/the-making-of-the-atomic-bomb";
+import { theMismeasureOfMan } from "./books/the-mismeasure-of-man";
 import { theMythicalManMonth } from "./books/the-mythical-man-month";
 import { thePowerBroker } from "./books/the-power-broker";
 import { thePrince } from "./books/the-prince";
+import { theRoadToSerfdom } from "./books/the-road-to-serfdom";
 import { theSecondSex } from "./books/the-second-sex";
 import { theSelfishGene } from "./books/the-selfish-gene";
 import { thinkingFastAndSlow } from "./books/thinking-fast-and-slow";
@@ -57,16 +67,19 @@ export const books: Book[] = [
   analects,
   artOfWar,
   bhagavadGita,
+  capital,
   communistManifesto,
   confessionsAugustine,
   deathAndLifeGreatAmericanCities,
   democracyInAmerica,
   discoursesEpictetus,
+  eichmannInJerusalem,
   essaysMontaigne,
   generalTheory,
   godelEscherBach,
   gunsGermsAndSteel,
   highOutputManagement,
+  hiroshima,
   historiesHerodotus,
   ifThisIsAMan,
   interpretationOfDreams,
@@ -77,6 +90,7 @@ export const books: Book[] = [
   nicomacheanEthics,
   notesOfANativeSon,
   onLiberty,
+  onTheGenealogyOfMorals,
   onTheOriginOfSpecies,
   orientalism,
   originsOfTotalitarianism,
@@ -88,11 +102,17 @@ export const books: Book[] = [
   soulsOfBlackFolk,
   structureOfScientificRevolutions,
   taoTeChing,
+  theAutobiographyOfMalcolmX,
+  theBlackSwan,
   theDoubleHelix,
   theFeminineMystique,
+  theGulagArchipelago,
+  theMakingOfTheAtomicBomb,
+  theMismeasureOfMan,
   theMythicalManMonth,
   thePowerBroker,
   thePrince,
+  theRoadToSerfdom,
   theSecondSex,
   theSelfishGene,
   thinkingFastAndSlow,
