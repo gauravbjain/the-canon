@@ -1,4 +1,5 @@
 import type { Book } from "./types";
+import { aBriefHistoryOfTime } from "./books/a-brief-history-of-time";
 import { aRoomOfOnesOwn } from "./books/a-room-of-ones-own";
 import { aTheoryOfJustice } from "./books/a-theory-of-justice";
 import { analects } from "./books/analects";
@@ -9,6 +10,7 @@ import { communistManifesto } from "./books/communist-manifesto";
 import { confessionsAugustine } from "./books/confessions-augustine";
 import { deathAndLifeGreatAmericanCities } from "./books/death-and-life-great-american-cities";
 import { democracyInAmerica } from "./books/democracy-in-america";
+import { disciplineAndPunish } from "./books/discipline-and-punish";
 import { discoursesEpictetus } from "./books/discourses-epictetus";
 import { eichmannInJerusalem } from "./books/eichmann-in-jerusalem";
 import { essaysMontaigne } from "./books/essays-montaigne";
@@ -18,7 +20,9 @@ import { gunsGermsAndSteel } from "./books/guns-germs-and-steel";
 import { highOutputManagement } from "./books/high-output-management";
 import { hiroshima } from "./books/hiroshima";
 import { historiesHerodotus } from "./books/histories-herodotus";
+import { homageToCatalonia } from "./books/homage-to-catalonia";
 import { ifThisIsAMan } from "./books/if-this-is-a-man";
+import { inColdBlood } from "./books/in-cold-blood";
 import { interpretationOfDreams } from "./books/interpretation-of-dreams";
 import { lettersFromAStoic } from "./books/letters-from-a-stoic";
 import { leviathan } from "./books/leviathan";
@@ -41,9 +45,12 @@ import { structureOfScientificRevolutions } from "./books/structure-of-scientifi
 import { taoTeChing } from "./books/tao-te-ching";
 import { theAutobiographyOfMalcolmX } from "./books/the-autobiography-of-malcolm-x";
 import { theBlackSwan } from "./books/the-black-swan";
+import { theDiaryOfAYoungGirl } from "./books/the-diary-of-a-young-girl";
 import { theDoubleHelix } from "./books/the-double-helix";
+import { theElementsOfStyle } from "./books/the-elements-of-style";
 import { theFeminineMystique } from "./books/the-feminine-mystique";
 import { theGulagArchipelago } from "./books/the-gulag-archipelago";
+import { theGunsOfAugust } from "./books/the-guns-of-august";
 import { theMakingOfTheAtomicBomb } from "./books/the-making-of-the-atomic-bomb";
 import { theMismeasureOfMan } from "./books/the-mismeasure-of-man";
 import { theMythicalManMonth } from "./books/the-mythical-man-month";
@@ -52,6 +59,9 @@ import { thePrince } from "./books/the-prince";
 import { theRoadToSerfdom } from "./books/the-road-to-serfdom";
 import { theSecondSex } from "./books/the-second-sex";
 import { theSelfishGene } from "./books/the-selfish-gene";
+import { theSixthExtinction } from "./books/the-sixth-extinction";
+import { theStoryOfMyExperimentsWithTruth } from "./books/the-story-of-my-experiments-with-truth";
+import { theVarietiesOfReligiousExperience } from "./books/the-varieties-of-religious-experience";
 import { thinkingFastAndSlow } from "./books/thinking-fast-and-slow";
 import { thinkingInSystems } from "./books/thinking-in-systems";
 import { walden } from "./books/walden";
@@ -62,6 +72,7 @@ import { wealthOfNations } from "./books/wealth-of-nations";
  * content/books and run `npm run index`.
  */
 export const books: Book[] = [
+  aBriefHistoryOfTime,
   aRoomOfOnesOwn,
   aTheoryOfJustice,
   analects,
@@ -72,6 +83,7 @@ export const books: Book[] = [
   confessionsAugustine,
   deathAndLifeGreatAmericanCities,
   democracyInAmerica,
+  disciplineAndPunish,
   discoursesEpictetus,
   eichmannInJerusalem,
   essaysMontaigne,
@@ -81,7 +93,9 @@ export const books: Book[] = [
   highOutputManagement,
   hiroshima,
   historiesHerodotus,
+  homageToCatalonia,
   ifThisIsAMan,
+  inColdBlood,
   interpretationOfDreams,
   lettersFromAStoic,
   leviathan,
@@ -104,9 +118,12 @@ export const books: Book[] = [
   taoTeChing,
   theAutobiographyOfMalcolmX,
   theBlackSwan,
+  theDiaryOfAYoungGirl,
   theDoubleHelix,
+  theElementsOfStyle,
   theFeminineMystique,
   theGulagArchipelago,
+  theGunsOfAugust,
   theMakingOfTheAtomicBomb,
   theMismeasureOfMan,
   theMythicalManMonth,
@@ -115,6 +132,9 @@ export const books: Book[] = [
   theRoadToSerfdom,
   theSecondSex,
   theSelfishGene,
+  theSixthExtinction,
+  theStoryOfMyExperimentsWithTruth,
+  theVarietiesOfReligiousExperience,
   thinkingFastAndSlow,
   thinkingInSystems,
   walden,
