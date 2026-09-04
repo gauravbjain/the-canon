@@ -5,22 +5,34 @@ import { artOfWar } from "./books/art-of-war";
 import { bhagavadGita } from "./books/bhagavad-gita";
 import { communistManifesto } from "./books/communist-manifesto";
 import { confessionsAugustine } from "./books/confessions-augustine";
+import { deathAndLifeGreatAmericanCities } from "./books/death-and-life-great-american-cities";
 import { democracyInAmerica } from "./books/democracy-in-america";
 import { discoursesEpictetus } from "./books/discourses-epictetus";
 import { essaysMontaigne } from "./books/essays-montaigne";
+import { generalTheory } from "./books/general-theory";
 import { historiesHerodotus } from "./books/histories-herodotus";
+import { ifThisIsAMan } from "./books/if-this-is-a-man";
 import { interpretationOfDreams } from "./books/interpretation-of-dreams";
 import { lettersFromAStoic } from "./books/letters-from-a-stoic";
 import { leviathan } from "./books/leviathan";
+import { mansSearchForMeaning } from "./books/mans-search-for-meaning";
 import { meditations } from "./books/meditations";
 import { nicomacheanEthics } from "./books/nicomachean-ethics";
+import { notesOfANativeSon } from "./books/notes-of-a-native-son";
 import { onLiberty } from "./books/on-liberty";
 import { onTheOriginOfSpecies } from "./books/on-the-origin-of-species";
+import { originsOfTotalitarianism } from "./books/origins-of-totalitarianism";
 import { peloponnesianWar } from "./books/peloponnesian-war";
+import { protestantEthic } from "./books/protestant-ethic";
 import { republic } from "./books/republic";
+import { silentSpring } from "./books/silent-spring";
 import { soulsOfBlackFolk } from "./books/souls-of-black-folk";
+import { structureOfScientificRevolutions } from "./books/structure-of-scientific-revolutions";
 import { taoTeChing } from "./books/tao-te-ching";
+import { theDoubleHelix } from "./books/the-double-helix";
+import { theFeminineMystique } from "./books/the-feminine-mystique";
 import { thePrince } from "./books/the-prince";
+import { theSecondSex } from "./books/the-second-sex";
 import { thinkingFastAndSlow } from "./books/thinking-fast-and-slow";
 import { walden } from "./books/walden";
 import { wealthOfNations } from "./books/wealth-of-nations";
@@ -36,22 +48,34 @@ export const books: Book[] = [
   bhagavadGita,
   communistManifesto,
   confessionsAugustine,
+  deathAndLifeGreatAmericanCities,
   democracyInAmerica,
   discoursesEpictetus,
   essaysMontaigne,
+  generalTheory,
   historiesHerodotus,
+  ifThisIsAMan,
   interpretationOfDreams,
   lettersFromAStoic,
   leviathan,
+  mansSearchForMeaning,
   meditations,
   nicomacheanEthics,
+  notesOfANativeSon,
   onLiberty,
   onTheOriginOfSpecies,
+  originsOfTotalitarianism,
   peloponnesianWar,
+  protestantEthic,
   republic,
+  silentSpring,
   soulsOfBlackFolk,
+  structureOfScientificRevolutions,
   taoTeChing,
+  theDoubleHelix,
+  theFeminineMystique,
   thePrince,
+  theSecondSex,
   thinkingFastAndSlow,
   walden,
   wealthOfNations,
