@@ -2,32 +2,34 @@ import { paletteFor } from "@/lib/cover";
 import type { Book } from "@/content/types";
 
 /**
- * A book's jacket. When a real cover resolved, it is shown over the
- * generated one — so a jacket that fails to load in the browser reveals the
- * typographic cover underneath rather than an empty box.
+ * A book's jacket. A resolved cover image sits over the generated typographic
+ * one, so a jacket that fails to load reveals the designed cover underneath
+ * rather than an empty box.
  */
 export function Cover({
   book,
   src,
   large = false,
+  className = "",
 }: {
   book: Book;
   src?: string | null;
   large?: boolean;
+  className?: string;
 }) {
   const p = paletteFor(book.slug);
-  const long = book.title.length > 26;
+  const long = book.title.length > 28;
 
   return (
     <div
-      className={`cover${large ? " cover-lg" : ""}`}
+      className={`cover${large ? " cover-lg" : ""}${className ? ` ${className}` : ""}`}
       style={{ background: p.bg, color: p.ink }}
       aria-hidden="true"
     >
       <p className="cover-cat" style={{ color: p.accent }}>
         {book.category}
       </p>
-      <p className="cover-title" style={{ fontSize: long ? "1.08rem" : undefined }}>
+      <p className={`cover-title${long ? " cover-title-long" : ""}`}>
         {book.title}
       </p>
       <div className="cover-rule" style={{ background: p.rule }} />

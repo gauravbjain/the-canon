@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { Cover } from "./Cover";
+import { catColor } from "@/lib/category";
 import type { Book } from "@/content/types";
 
 type Era = { label: string; from: number; to: number };
@@ -59,78 +60,93 @@ export function Shelf({
   return (
     <>
       <div className="controls">
-        <input
-          className="search"
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by title, author or idea"
-          aria-label="Search the shelf"
-        />
-        <div className="chips" role="group" aria-label="Filter by category">
-          {cats.map((c) => (
-            <button
-              key={c}
-              className={`chip${category === c ? " on" : ""}`}
-              onClick={() => setCategory(category === c ? null : c)}
-              aria-pressed={category === c}
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-        <div className="chips" role="group" aria-label="Filter by era">
-          {ERAS.map((e) => (
-            <button
-              key={e.label}
-              className={`chip chip-era${era === e.label ? " on" : ""}`}
-              onClick={() => setEra(era === e.label ? null : e.label)}
-              aria-pressed={era === e.label}
-            >
-              {e.label}
-            </button>
-          ))}
-        </div>
-      </div>
+        <div className="wrap controls-inner">
+          <div className="search-field">
+            <svg className="search-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M11 11l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+            <input
+              className="search"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search title, author or idea"
+              aria-label="Search the shelf"
+            />
+          </div>
 
-      <div className="shelf-head">
-        <h2>{filtered ? "Matching" : "On the shelf"}</h2>
-        <span className="count">
-          {shown.length} {shown.length === 1 ? "book" : "books"}
-          {filtered && (
-            <>
-              {" · "}
-              <button className="linkish" onClick={clear}>
-                clear filters
+          <div className="chips" role="group" aria-label="Filter by subject">
+            {cats.map((c) => (
+              <button
+                key={c}
+                className={`chip${category === c ? " on" : ""}`}
+                onClick={() => setCategory(category === c ? null : c)}
+                aria-pressed={category === c}
+              >
+                {c}
               </button>
-            </>
-          )}
-        </span>
+            ))}
+          </div>
+
+          <div className="chips" role="group" aria-label="Filter by era">
+            {ERAS.map((e) => (
+              <button
+                key={e.label}
+                className={`chip${era === e.label ? " on" : ""}`}
+                onClick={() => setEra(era === e.label ? null : e.label)}
+                aria-pressed={era === e.label}
+              >
+                {e.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {shown.length === 0 ? (
-        <p className="empty">
-          Nothing on the shelf matches that yet. The canon is a hundred books,
-          not everything ever written.
-        </p>
-      ) : (
-        <ul className="shelf">
-          {shown.map((book) => (
-            <li className="shelf-item" key={book.slug}>
-              <Link href={`/book/${book.slug}`}>
-                <Cover book={book} src={covers[book.slug]} />
-                <div className="shelf-meta">
-                  <p className="t">{book.title}</p>
-                  <p className="a">
-                    {book.author} · {book.era}
-                  </p>
-                  <p className="h">{book.hook}</p>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <div className="wrap">
+        <div className="section-head">
+          <h2>{filtered ? "Matching" : "The shelf, in order of publication"}</h2>
+          <span className="section-note">
+            {shown.length} {shown.length === 1 ? "book" : "books"}
+            {filtered && (
+              <>
+                {" · "}
+                <button className="linkish" onClick={clear}>
+                  clear
+                </button>
+              </>
+            )}
+          </span>
+        </div>
+
+        {shown.length === 0 ? (
+          <p className="empty">
+            Nothing on the shelf matches that. The canon is a hundred books, not
+            everything ever written.
+          </p>
+        ) : (
+          <ul className="shelf">
+            {shown.map((book) => (
+              <li className="shelf-item" key={book.slug}>
+                <Link href={`/book/${book.slug}`}>
+                  <Cover book={book} src={covers[book.slug]} />
+                  <div className="shelf-meta">
+                    <p className="shelf-cat" style={{ color: catColor(book.category) }}>
+                      {book.category}
+                    </p>
+                    <p className="t">{book.title}</p>
+                    <p className="a">
+                      {book.author} · {book.era}
+                    </p>
+                    <p className="h">{book.hook}</p>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </>
   );
 }
